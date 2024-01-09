@@ -1,0 +1,83 @@
+---
+import { ViewTransitions } from 'astro:transitions';
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+
+		<meta charset="UTF-8" />
+		<ViewTransitions />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+<style is:global>
+	:root {
+		--text-light: #010e0b;
+		--text-dark: #f1fefb;
+
+		--primary: #46c0a0;
+		--secondary: #9eccde;
+		--accent: #6d85d0;
+
+		--primary-dark: #40ba9a;
+		--secondary-dark: #214d5f;
+		--accent-dark: #2f4792;
+		--text-accent: #594f4f;
+
+		--text-accent-dark:#bdb3b3;
+
+		--bg-light: #f1fefb;
+		--bg-dark: #010e0b;
+	}
+
+
+	body {
+		font-family: 'IBM Plex Mono', monospace;
+		margin: 0 auto;
+		/* height: 100vh; */
+		word-wrap: break-word;
+		overflow-wrap: break-word;
+		line-height: 2.25;
+		font-size: 16px;
+		background-color: var(--bg-dark);
+		color: var(--text-dark);
+		scroll-behavior: smooth;
+		/* overflow: auto; */
+		max-width: 95%;
+		opacity: 0.8;
+		
+	}
+
+	h2 {
+		font-size: 2rem;
+		line-height: 120%;
+		letter-spacing: 0.1em;
+		color: var(--secondary);
+	}
+
+
+	::selection {
+		background: var(--secondary-dark);
+	}
+
+	::-moz-selection {
+		background: var(--secondary-dark);
+	}
+</style>

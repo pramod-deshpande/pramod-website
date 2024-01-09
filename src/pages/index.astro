@@ -1,0 +1,188 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Pramod Deshpande">
+	<main>
+		<section class="container">
+			<div class="heading">
+				<h1 data-value="Pramod Deshpande">Pramod Deshpande</h1>
+			</div>
+			<div class="about-section">
+				<h2>About</h2>
+				<p>
+					Hello, I'm a passionate developer who finds joy in exploring
+					the intersection of technology and creativity. With a love
+					for cats, nature, and philosophy, I bring a unique
+					perspective to my work. My primary focus is on .NET
+					technologies, where I thrive in creating robust and
+					efficient applications. Additionally, I have experience in
+					utilizing Python for data analytics and JavaScript for web
+					development.
+				</p>
+			</div>
+		</section>
+		<section class="projects-section">
+			<div class="projects-title">
+				<h2>Work</h2>
+			</div>
+			<div class="project-item">
+				<a href="#">
+					<div class="project-text">Pressed For Time</div>
+					<div class="project-helperText">Professional</div>
+				</a>
+
+				<a href="">
+					<div class="project-text">Venus EMR</div>
+					<div class="project-helperText">Professional</div>
+				</a>
+
+				<a href="">
+					<div class="project-text">HPG - HSMS</div>
+					<div class="project-helperText">Professional</div>
+				</a>
+
+				<a href="">
+					<div class="project-text">QRCoder</div>
+					<div class="project-helperText">Personal</div>
+				</a>
+
+				<a href="">
+					<div class="project-text">My Projects</div>
+					<div class="project-helperText">Personal</div>
+				</a>
+
+				<a href="">
+					<div class="project-text">Kuro</div>
+					<div class="project-helperText">Personal</div>
+				</a>
+			</div>
+		</section>
+	</main>
+</Layout>
+
+<style>
+	main {
+		display: flex;
+		height: 100vh;
+		box-sizing: border-box;
+		padding: 1rem;
+	}
+
+	.heading {
+		color: var(--text-dark);
+		font-size: 2rem;
+		padding: 1rem;
+		color: var(--primary-dark);
+		letter-spacing: 0.1em;
+	}
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		max-width: 50%;
+	}
+
+	.about-section {
+		padding: 1.5rem;
+		
+	}
+
+	.projects-title {
+		padding-top: 1.5rem;
+		padding-bottom: 1.5rem;
+		align-self: flex-start;
+	}
+
+	.projects-section {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+		overflow-y: auto;
+		margin: 0 auto;
+	
+	}
+
+	.project-item {
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+		align-items: flex-start;
+		color: var(--text-dark);
+		text-decoration: none;
+		gap: 2rem;
+		padding-bottom: 0.5rem;
+		width: 100%;
+	}
+
+	.project-helperText,
+	.project-text {
+		margin: 0;
+		width: 100%;
+		padding-bottom: 0.5rem;
+		line-height: 2.25;
+	}
+
+	.project-text {
+		font-size: 2rem;
+		letter-spacing: 0.1em;
+	}
+
+	.project-helperText {
+		color: var(--text-accent-dark);
+	}
+
+
+	a {
+    text-decoration: none;
+    color: var(--text-dark);
+    background:
+        linear-gradient(to right,
+            var(--primary-dark),
+            var(--primary-dark)),
+        linear-gradient(to right,
+            var(--accent-dark),
+            var(--accent-dark),
+            var(--accent-dark));
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+}
+
+a:hover {
+    background-size: 0 3px, 100% 3px;
+}
+
+.projects-section {
+		-ms-overflow-style: none;
+	}
+
+	
+	.projects-section::-webkit-scrollbar {
+		display: none;
+	}
+
+
+
+	.projects-section {
+		scrollbar-width: none;
+	}
+
+	@media (max-width: 992px) {
+		main {
+			flex-direction: column;
+			height: auto;
+		}
+
+		.container,
+		.projects-section {
+			max-width: 100%;
+			margin: 0;
+			align-items: flex-start;
+		}
+	}
+
+
+</style>
