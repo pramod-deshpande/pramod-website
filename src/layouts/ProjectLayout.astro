@@ -1,0 +1,23 @@
+---
+ import MainLayout from "./Layout.astro";
+ import type { CollectionEntry } from "astro:content";
+
+ type Props = CollectionEntry<"projects">["data"];
+---
+
+<MainLayout title="Projects">
+<main>
+<article>
+    <slot/>
+</article>
+</main>
+</MainLayout>
+
+<style>
+    article{
+		height: 100vh;
+		box-sizing: border-box;
+		padding: 1rem;
+    }
+
+</style>

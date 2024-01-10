@@ -1,12 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
+
 ---
 
 <Layout title="Pramod Deshpande">
 	<main>
 		<section class="container">
 			<div class="heading">
-				<h1 data-value="Pramod Deshpande">Pramod Deshpande</h1>
+				<h1 id="title" data-value="Pramod Deshpande">Pramod Deshpande</h1>
 			</div>
 			<div class="about-section">
 				<h2>About</h2>
@@ -27,33 +28,33 @@ import Layout from "../layouts/Layout.astro";
 				<h2>Work</h2>
 			</div>
 			<div class="project-item">
-				<a href="#">
+				<a href="/projects/pressed-for-time">
 					<div class="project-text">Pressed For Time</div>
 					<div class="project-helperText">Professional</div>
 				</a>
 
-				<a href="">
+				<a href="#">
 					<div class="project-text">Venus EMR</div>
 					<div class="project-helperText">Professional</div>
 				</a>
 
-				<a href="">
+				<a href="#">
 					<div class="project-text">HPG - HSMS</div>
 					<div class="project-helperText">Professional</div>
 				</a>
 
-				<a href="">
+				<a href="https://github.com/pramod-kun/QrCodeGenerator" target="_blank">
 					<div class="project-text">QRCoder</div>
 					<div class="project-helperText">Personal</div>
 				</a>
 
-				<a href="">
+				<a href="https://github.com/pramod-kun/MyProjects" target="_blank">
 					<div class="project-text">My Projects</div>
 					<div class="project-helperText">Personal</div>
 				</a>
 
-				<a href="">
-					<div class="project-text">Kuro</div>
+				<a href="https://github.com/pramod-kun/Panulu" target="_blank">
+					<div class="project-text">Panulu</div>
 					<div class="project-helperText">Personal</div>
 				</a>
 			</div>
@@ -70,13 +71,14 @@ import Layout from "../layouts/Layout.astro";
 	}
 
 	.heading {
-		color: var(--text-dark);
-		font-size: 2rem;
 		padding: 1rem;
-		color: var(--primary-dark);
-		letter-spacing: 0.1em;
 	}
 
+	#title{
+		font-size: 3rem;
+		letter-spacing: 0.1em;
+		color: var(--primary-dark);
+	}
 	.container {
 		display: flex;
 		flex-direction: column;
