@@ -1,10 +1,19 @@
 ---
-title: "PFT"
-description: "Lorem ipsum dolor sit amet"
+title: "Venus"
+description: "Patient Management application for North Shore Laser Clinic"
 ---
 
-Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.
+A patient management application to help a clinic transition from a paper-based system to a digital system while optimizing the overall workflow of the clinic. 
 
-## Headings
+## Features 
+- Patient Management
+- PDF Conversion 
+- Digital Signature 
+- Email Client 
+- File Management. 
 
-The following HTML `<h1>`—`<h6>` elements represent six levels of section headings. `<h1>` is the highest section level while `<h6>` is the lowest.
+## Tech Stack 
+
+C#, ASP.NET Core, MS SQL Server, IIS, Identity Server, HTML, CSS, JavaScript, JQuery
+
+## Screenshots
