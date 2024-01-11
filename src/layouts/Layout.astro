@@ -1,5 +1,6 @@
 ---
 import { ViewTransitions } from "astro:transitions";
+import Blob from "../components/Blob.astro";
 
 import Footer from "../components/Footer.astro";
 
@@ -27,84 +28,87 @@ const { title } = Astro.props;
 	</head>
 	<body>
 		<slot />
-	</body><style is:global>
-		:root {
-			--text-light: #010e0b;
-			--text-dark: #f1fefb;
+		<style is:global>
+			:root {
+				--text-light: #010e0b;
+				--text-dark: #f1fefb;
 
-			--primary: #46c0a0;
-			--secondary: #9eccde;
-			--accent: #6d85d0;
+				--primary: #46c0a0;
+				--secondary: #9eccde;
+				--accent: #6d85d0;
 
-			--primary-dark: #40ba9a;
-			--secondary-dark: #214d5f;
-			--accent-dark: #2f4792;
-			--text-accent: #594f4f;
+				--primary-dark: #40ba9a;
+				--secondary-dark: #214d5f;
+				--accent-dark: #2f4792;
+				--text-accent: #594f4f;
 
-			--text-accent-dark: #bdb3b3;
+				--text-accent-dark: #bdb3b3;
 
-			--bg-light: #f1fefb;
-			--bg-dark: #010e0b;
-		}
-
-		body {
-			font-family: "IBM Plex Mono", monospace;
-			margin: 0 auto;
-			/* height: 100vh; */
-			word-wrap: break-word;
-			overflow-wrap: break-word;
-			line-height: 2.25;
-			font-size: 16px;
-			background-color: var(--bg-dark);
-			color: var(--text-dark);
-			scroll-behavior: smooth;
-			/* overflow: auto; */
-			max-width: 95%;
-			opacity: 0.8;
-		}
-
-		h2 {
-			font-size: 2rem;
-			line-height: 120%;
-			letter-spacing: 0.1em;
-			color: var(--secondary);
-		}
-
-		h1 {
-			font-size: 2rem;
-			line-height: 120%;
-			letter-spacing: 0.1em;
-			color: var(--primary);
-		}
-
-		::selection {
-			background: var(--secondary-dark);
-		}
-
-		::-moz-selection {
-			background: var(--secondary-dark);
-		}
-
-		.md-images {
-			max-width: 100%;
-			height: auto;
-			margin-top: 10px;
-		}
-
-		@media (min-width: 992px) {
-			.md-images {
-				width: 30%;
-				height: auto;
-				margin: 1rem;
+				--bg-light: #f1fefb;
+				--bg-dark: #010e0b;
 			}
-		}
 
-		@media (min-width: 600px) {
-			.md-images {
-				max-width: 60%;
-				height: auto;
-				margin: 1rem;
+			body {
+				font-family: "IBM Plex Mono", monospace;
+				margin: 0 auto;
+				/* height: 100vh; */
+				word-wrap: break-word;
+				overflow-wrap: break-word;
+				line-height: 2.25;
+				font-size: 16px;
+				background-color: var(--bg-dark);
+				color: var(--text-dark);
+				scroll-behavior: smooth;
+				/* overflow: auto; */
+				max-width: 95%;
+				opacity: 0.8;
 			}
-		}
-	</style>
+
+			h2 {
+				font-size: 2rem;
+				line-height: 120%;
+				letter-spacing: 0.1em;
+				color: var(--secondary);
+			}
+
+			h1 {
+				font-size: 2rem;
+				line-height: 120%;
+				letter-spacing: 0.1em;
+				color: var(--primary);
+			}
+
+			::selection {
+				background: var(--secondary-dark);
+			}
+
+			::-moz-selection {
+				background: var(--secondary-dark);
+			}
+
+			.md-images {
+				max-width: 100%;
+				height: auto;
+				margin-top: 10px;
+			}
+
+			@media (min-width: 992px) {
+				.md-images {
+					width: 30%;
+					height: auto;
+					margin: 1rem;
+				}
+			}
+
+			@media (min-width: 600px) {
+				.md-images {
+					max-width: 60%;
+					height: auto;
+					margin: 1rem;
+				}
+			}
+
+
+		</style>
+	</body>
 </html>
