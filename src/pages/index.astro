@@ -2,6 +2,8 @@
 import Layout from "../layouts/Layout.astro";
 import Blob from "../components/Blob.astro";
 
+const base = import.meta.env.DEV ? "" : "/pramod-website";
+
 ---
 
 <Layout title="Pramod Deshpande">
@@ -30,12 +32,13 @@ import Blob from "../components/Blob.astro";
 				<h2>Work</h2>
 			</div>
 			<div class="project-item">
-				<a href="/pramod-website/projects/pressed-for-time">
-					<div class="project-text">Pressed For Time</div>
+				
+				<a href=`${base}/projects/pressed-for-time`>
+					<div class="project-text">Pressed For Time{base}</div>
 					<div class="project-helperText">Professional</div>
 				</a>
 
-				<a href="/pramod-website/projects/venus-nslc">
+				<a href=`${base}/projects/venus-nslc`>
 					<div class="project-text">Venus EMR</div>
 					<div class="project-helperText">Professional</div>
 				</a>

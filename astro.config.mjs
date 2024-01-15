@@ -4,7 +4,7 @@ import { defineConfig } from 'astro/config';
 export default defineConfig({
 
     site: 'https://pramod-kun.github.io',
-    base: import.meta.env.DEV ? "" : "/pramod-website",
+    base: import.meta.env.DEV ? "/" : "/pramod-website",
     // base: '/pramod-website',
 
 
