@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Blob from "../components/Blob.astro";
 
+
 const base = import.meta.env.DEV ? "" : "/pramod-website";
 
 ---
@@ -84,6 +85,8 @@ const base = import.meta.env.DEV ? "" : "/pramod-website";
 		letter-spacing: 0.1em;
 		color: var(--primary-dark);
 	}
+
+
 	.container {
 		display: flex;
 		flex-direction: column;
@@ -107,6 +110,7 @@ const base = import.meta.env.DEV ? "" : "/pramod-website";
 		align-items: center;
 		padding: 2.5rem 1.5rem 1.5rem 1.5rem;
 		overflow-y: auto;
+		scroll-behavior: smooth;
 		margin: 0 auto;
 	
 	}
